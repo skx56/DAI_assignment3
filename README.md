@@ -24,6 +24,17 @@ DAI Assignment 3 is documented as a compact analytical project with a notebook-f
 
 The repository uses a single-notebook structure. This is appropriate for assignment-style analysis where the notebook contains the full sequence of loading, exploration, transformation, modeling, and conclusions.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  Dataset["Assignment Dataset"] --> Notebook["Analysis Notebook"]
+  Notebook --> Clean["Data Cleaning"]
+  Clean --> Explore["Exploratory Analysis"]
+  Explore --> Model["Modeling or Analytical Method"]
+  Model --> Findings["Documented Findings"]
+```
+
 ## Technology Stack
 
 - Jupyter notebook execution.
